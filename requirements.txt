@@ -4,6 +4,6 @@ numpy
 matplotlib
 tensorflow
 collections
-imblearn
+imbalanced-learn
 joblib
 
