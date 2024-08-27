@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 import joblib
 
 # Load the model from Google Drive
-model_path = '/content/dl_assignment_model2.h5'  # Update with your model path
+model_path = 'dl_assignment_model2.h5'  # Update with your model path
 model = load_model(model_path, compile=False)  # Avoid recompiling
 
 # Load the fitted scaler
