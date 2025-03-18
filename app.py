@@ -4,7 +4,7 @@ import pandas as pd
 from tensorflow.keras.models import load_model
 from sklearn.preprocessing import StandardScaler
 import joblib
-
+import os
 # Load the model from Google Drive
 model_path = os.path.join(os.getcwd(), 'dl_assignment_model2.h5')
 scaler_path = os.path.join(os.getcwd(), 'scaler.pkl')
