@@ -6,11 +6,13 @@ from sklearn.preprocessing import StandardScaler
 import joblib
 
 # Load the model from Google Drive
-model_path = 'dl_assignment_model2.h5'  # Update with your model path
+model_path = os.path.join(os.getcwd(), 'dl_assignment_model2.h5')
+scaler_path = os.path.join(os.getcwd(), 'scaler.pkl')
+
 model = load_model(model_path, compile=False)  # Avoid recompiling
 
 # Load the fitted scaler
-scaler = joblib.load('scaler.pkl')  # Update with your scaler path
+scaler = joblib.load(scaler_path)  # Update with your scaler path
 
 # Create a function to preprocess user input
 def preprocess_input(data):
